@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureAura Skincare</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #6ab04c;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .product-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-item:hover {
+            transform: translateY(-5px);
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .testimonials {
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .testimonial-item {
+            margin: 10px 0;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #6ab04c;
+            color: white;
+            position: relative;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #6ab04c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #5aa044;
+        }
+        .ingredients {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to PureAura Skincare</h1>
+    <p>Embrace the beauty of nature with our all-natural skincare products.</p>
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <div class="product-item">
+                <img src="https://th.bing.com/th/id/OIG2.mkzO5g7f.dQQo3eoJoGf?w=100&h=100&c=6&o=5&pid=ImgGn" alt="Hydrating Face Cream">
+                <h3>Hydrating Face Cream</h3>
+                <p>A luxurious blend of natural oils and botanicals to deeply hydrate and rejuvenate your skin.</p>
+                <p><strong>Price: $29.99</strong></p>
+            </div>
+            <div class="product-item">
+                <img src="https://th.bing.com/th/id/OIG4.jr9pYuvRwiVKUJL8MsII?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" alt="Brightening Serum">
+                <h3>Brightening Serum</h3>
+                <p>Infused with vitamin C and antioxidants, this serum brightens your complexion and evens skin tone.</p>
+                <p><strong>Price: $34.99</strong></p>
+            </div>
+            <div class="product-item">
+                <img src="https://th.bing.com/th/id/OIG2.surMxcqlFgaj.pIVThjf?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" alt="Revitalizing Mask">
+                <h3>Revitalizing Mask</h3>
+                <p>A nourishing mask that detoxifies and revitalizes, leaving your skin soft and radiant.</p>
+                <p><strong>Price: $24.99</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ingredients">
+        <h2>Featured Ingredients</h2>
+        <p>At PureAura, we believe in the power of nature. Here are some of our key ingredients:</p>
+        <ul>
+            <li><strong>Aloe Vera:</strong> Known for its soothing properties, it hydrates and calms the skin.</li>
+            <li><strong>Jojoba Oil:</strong> A natural moisturizer that mimics skin's own sebum for balanced hydration.</li>
+            <li><strong>Vitamin C:</strong> Brightens the complexion and helps reduce the appearance of dark spots.</li>
+            <li><strong>Green Tea Extract:</strong> Packed with antioxidants, it protects and rejuvenates the skin.</li>
+        </ul>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-item">
+            "PureAura has transformed my skin! The Hydrating Face Cream is a game changer." - Sarah L.
+        </div>
+        <div class="testimonial-item">
+            "I've never been happier with a skincare line. The Brightening Serum works wonders!" - Jake M.
+        </div>
+        <div class="testimonial-item">
+            "The Revitalizing Mask is my go-to for a spa day at home. Highly recommend!" - Emily R.
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 PureAura Skincare. All Rights Reserved.</p>
+    <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>
